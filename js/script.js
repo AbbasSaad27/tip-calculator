@@ -39,7 +39,7 @@ const showCalcedResult = ([amount, personCount]) => {
 
   showTipEl.innerText = tipAmount % 1 !== 0 ? tipAmount.toFixed(2) : tipAmount;
   showTotalEl.innerText =
-    totalAmount % 1 !== 0 ? totalAmount.toFixed(2) : TotalAmount;
+    totalAmount % 1 !== 0 ? totalAmount.toFixed(2) : totalAmount;
 };
 
 form.addEventListener("submit", (e) => {
@@ -52,7 +52,6 @@ form.addEventListener("submit", (e) => {
   if (!percentage && !inputPerc.value) {
     alert("please select or add a percentage value");
   }
-  console.log("submitted");
   const amount = +inputAmount.value;
   const personCount = +inputPeople.value;
 
