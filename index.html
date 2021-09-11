@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" type="stylesheet" />
+    <script defer src="js/script.js"></script>
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="app-title">SPLI<span class="title-line-2">TTER</span></h1>
+      <seciton class="calculator">
+        <div class="calculator-inputs">
+          <form class="calculator-form">
+            <div class="input-bill">
+              <label for="bill" class="bill-label label">Bill</label>
+              <img src="images/icon-dollar.svg" alt="$" class="bill-icon" />
+              <input
+                type="number"
+                placeholder="0"
+                id="bill"
+                name="bill"
+                required
+                min="0"
+                step="any"
+              />
+            </div>
+            <div class="perc-select">
+              <h3 class="perc-select-label label">Select Tip %</h3>
+              <div class="tip-box-container">
+                <button type="button" class="tip-box tip-box-button tip-box1">
+                  5%
+                </button>
+                <button type="button" class="tip-box tip-box-button tip-box2">
+                  10%
+                </button>
+                <button type="button" class="tip-box tip-box-button tip-box3">
+                  15%
+                </button>
+                <button type="button" class="tip-box tip-box-button tip-box4">
+                  25%
+                </button>
+                <button type="button" class="tip-box tip-box-button tip-box5">
+                  50%
+                </button>
+                <div class="tip-box tip-box-input">
+                  <input
+                    type="number"
+                    placeholder="Custom"
+                    class="perc-input"
+                    min="0"
+                    step="any"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="input-people">
+              <label for="people" class="people-label label"
+                >Number of People</label
+              >
+              <img src="images/icon-person.svg" alt="$" class="people-icon" />
+              <input
+                type="number"
+                placeholder="0"
+                id="people"
+                name="people"
+                required
+                min="1"
+              />
+            </div>
+            <button title="btn" class="btn-submit" type="submit"></button>
+          </form>
+        </div>
+        <div class="calc-result">
+          <div class="tip-amount-container">
+            <div class="tip-amount-title">
+              <p class="title">Tip Amount</p>
+              <span>/ person</span>
+            </div>
+            <p class="tip-amount">$<span class="amount tip">0.00</span></p>
+          </div>
+          <div class="total-amount-container">
+            <div class="total-amount-title">
+              <p class="title">Total</p>
+              <span>/ person</span>
+            </div>
+            <p class="total-amount">$<span class="amount total">0.00</span></p>
+          </div>
+          <button type="button" class="btn-reset disabled">RESET</button>
+        </div>
+      </seciton>
+    </main>
+  </body>
+</html>
